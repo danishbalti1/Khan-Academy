@@ -11,9 +11,12 @@
     <link rel="stylesheet" href="khan.css" />
   </head>
   <body>
+    <div class="menu-btn">
+      <i class="fas fa-bars fa-2x"></i>
+    </div>
     <div class="container">
       <div class="main-nav">
-        <ul class="left-menu">
+        <ul class="left-menu show">
           <li><a href="#" class="courses">Courses</a></li>
           <li>
             <input type="text" placeholder="Search" />
@@ -172,12 +175,11 @@
       <hr>
       <h1>Supporters of our COVID-19 response
       </h1>
-      <div class="content2">
+      <div class="content">
         <img src="https://cdn.kastatic.org/images/supporters-logos/bank-of-america-gray@2x.png">
       <img src="  https://cdn.kastatic.org/images/supporters-logos/att-gray@2x.png">
       <img src="    https://cdn.kastatic.org/images/supporters-logos/google-gray@2x.png  ">
       <img src="  https://cdn.kastatic.org/images/supporters-logos/novartis-gray@2x.png">
-      <img src="   https://cdn.kastatic.org/images/supporters-logos/fastly-gray@2x.png">
       </div>
 
     </section>
@@ -186,9 +188,11 @@
         <div class="footer-about">
           <h3>Our mission is to provide a free, world-class education to anyone, anywhere.</h3>
         </br>
-        <h3>Khan Academy is a 501(c)(3) nonprofit organization. <a href="#">Donate</a> or <a href="#">volunteer</a>  today!</h3>
+        <h3>Khan Academy is a 501(c)(3) nonprofit organization.  today!</h3>
         </div>
-        <div class="footer-about">
+
+       
+        <div class="footer-links">
           <ul>
             <h5>About</h5>
             <li><a href="">News</a></li>
@@ -201,20 +205,6 @@
             <li><a href="">Our finances</a></li>
             <li><a href="">Careers</a></li>
             <li><a href="">Internship</a></li>
-          </ul>
-        </div>
-        <div class="footer-contact">
-          <h5>Contact</h5>
-          <ul>
-            <li><a href="">Help Center</a></li>
-            <li><a href="">Support Community</a></li>
-            <li><a href="">Share your Story</a></li>
-            <li><a href="">Press</a></li>
-          </ul>
-          <h5>Download our apps</h5>
-          <ul>
-            <li><a href="">iOs app</a></li>
-            <li><a href="">android app</a></li> 
           </ul>
         </div>
         <div class="courses">
@@ -235,6 +225,22 @@
             <li><a href="">Life Skills</a></li>
           </ul>
         </div>
+        <div class="footer-contact">
+          <h5>Contact</h5>
+          <ul>
+            <li><a href="">Help Center</a></li>
+            <li><a href="">Support Community</a></li>
+            <li><a href="">Share your Story</a></li>
+            <li><a href="">Press</a></li>
+          </ul>
+          <br>
+          <h5>Download our apps</h5>
+          <ul>
+            <li><a href="">iOs app</a></li>
+            <li><a href="">android app</a></li> 
+          </ul>
+        </div>
+       
       </div>
 
       <div class="outer">
@@ -251,7 +257,6 @@
           <img src="https://cdn.kastatic.org/images/country-flag-icons/india-flag.png"><h4>India</h4>
           
         </div>
-      </div>
       <hr>
       <div class="follow">
         <div class="terms">
@@ -259,6 +264,7 @@
         <a href="">Terms of use</a>
         <a href="">Privacy Policy</a>
       </div>
+      
       <div class="socials">
         <a href="https://facebook.com">
           <img src="https://i.ibb.co/LrVMXNR/social-fb.png" alt="Facebook" />
@@ -276,8 +282,12 @@
           />
         </a>
       </div>
-        
+
       </div>
     </footer>
+    <script>
+    document.querySelector('.menu-btn') .addEventListener('click', () => document.querySelector('.right-menu')
+    .classList.toggle('show'));
+  </script>
   </body>
 </html>
